@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "QPEdgeMenuController.h"
+#import "LeftViewController.h"
+#import "MainViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +20,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    leftVC.title = @"LeftVC";
+    UINavigationController *nac = [[UINavigationController alloc] initWithRootViewController:leftVC];
+    
+    UITabBarController *tabC = [[UITabBarController alloc] init];
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    UINavigationController *nac2 = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    mainVC.title = @"mainVC";
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.title = @"vc2";
+    vc2.view.backgroundColor = [UIColor greenColor];
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.title = @"vc3";
+    vc3.view.backgroundColor = [UIColor blueColor];
+    
+    [tabC addChildViewController:nac2];
+    [tabC addChildViewController:vc2];
+    [tabC addChildViewController:vc3];
+    
+    QPEdgeMenuController *edgeMenuController = [[QPEdgeMenuController alloc] initWithMainVC:tabC leftVC:nac];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = edgeMenuController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

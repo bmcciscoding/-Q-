@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		F14982A41E7BA29B0008D47E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982A31E7BA29B0008D47E /* main.m */; };
 		F14982A71E7BA29B0008D47E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982A61E7BA29B0008D47E /* AppDelegate.m */; };
-		F14982AA1E7BA29B0008D47E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982A91E7BA29B0008D47E /* ViewController.m */; };
-		F14982AD1E7BA29B0008D47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14982AB1E7BA29B0008D47E /* Main.storyboard */; };
 		F14982AF1E7BA29B0008D47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14982AE1E7BA29B0008D47E /* Assets.xcassets */; };
 		F14982B21E7BA29B0008D47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14982B01E7BA29B0008D47E /* LaunchScreen.storyboard */; };
+		F14982BB1E7BA3010008D47E /* QPEdgeMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982BA1E7BA3010008D47E /* QPEdgeMenuController.m */; };
+		F14982BE1E7BB3650008D47E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982BD1E7BB3650008D47E /* LeftViewController.m */; };
+		F14982C11E7BB4130008D47E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982C01E7BB4130008D47E /* MainViewController.m */; };
+		F14982C41E7BB5180008D47E /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F14982C31E7BB5180008D47E /* UIView+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,17 @@
 		F14982A31E7BA29B0008D47E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F14982A51E7BA29B0008D47E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F14982A61E7BA29B0008D47E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F14982A81E7BA29B0008D47E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F14982A91E7BA29B0008D47E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F14982AC1E7BA29B0008D47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F14982AE1E7BA29B0008D47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14982B11E7BA29B0008D47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F14982B31E7BA29B0008D47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14982B91E7BA3010008D47E /* QPEdgeMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPEdgeMenuController.h; sourceTree = "<group>"; };
+		F14982BA1E7BA3010008D47E /* QPEdgeMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPEdgeMenuController.m; sourceTree = "<group>"; };
+		F14982BC1E7BB3650008D47E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		F14982BD1E7BB3650008D47E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		F14982BF1E7BB4130008D47E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F14982C01E7BB4130008D47E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F14982C21E7BB5180008D47E /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		F14982C31E7BB5180008D47E /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +67,14 @@
 			children = (
 				F14982A51E7BA29B0008D47E /* AppDelegate.h */,
 				F14982A61E7BA29B0008D47E /* AppDelegate.m */,
-				F14982A81E7BA29B0008D47E /* ViewController.h */,
-				F14982A91E7BA29B0008D47E /* ViewController.m */,
-				F14982AB1E7BA29B0008D47E /* Main.storyboard */,
+				F14982B91E7BA3010008D47E /* QPEdgeMenuController.h */,
+				F14982BA1E7BA3010008D47E /* QPEdgeMenuController.m */,
+				F14982BC1E7BB3650008D47E /* LeftViewController.h */,
+				F14982BD1E7BB3650008D47E /* LeftViewController.m */,
+				F14982BF1E7BB4130008D47E /* MainViewController.h */,
+				F14982C01E7BB4130008D47E /* MainViewController.m */,
+				F14982C21E7BB5180008D47E /* UIView+YYAdd.h */,
+				F14982C31E7BB5180008D47E /* UIView+YYAdd.m */,
 				F14982AE1E7BA29B0008D47E /* Assets.xcassets */,
 				F14982B01E7BA29B0008D47E /* LaunchScreen.storyboard */,
 				F14982B31E7BA29B0008D47E /* Info.plist */,
@@ -140,7 +152,6 @@
 			files = (
 				F14982B21E7BA29B0008D47E /* LaunchScreen.storyboard in Resources */,
 				F14982AF1E7BA29B0008D47E /* Assets.xcassets in Resources */,
-				F14982AD1E7BA29B0008D47E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14982AA1E7BA29B0008D47E /* ViewController.m in Sources */,
+				F14982BB1E7BA3010008D47E /* QPEdgeMenuController.m in Sources */,
+				F14982C41E7BB5180008D47E /* UIView+YYAdd.m in Sources */,
+				F14982C11E7BB4130008D47E /* MainViewController.m in Sources */,
+				F14982BE1E7BB3650008D47E /* LeftViewController.m in Sources */,
 				F14982A71E7BA29B0008D47E /* AppDelegate.m in Sources */,
 				F14982A41E7BA29B0008D47E /* main.m in Sources */,
 			);
@@ -160,14 +174,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F14982AB1E7BA29B0008D47E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F14982AC1E7BA29B0008D47E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F14982B01E7BA29B0008D47E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
