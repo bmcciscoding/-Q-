@@ -133,7 +133,6 @@
 #pragma mark - 
 
 - (void)showLeftVC {
-    
     if (_isShowingLeft) {
         return;
     }
@@ -145,7 +144,6 @@
     } completion:^(BOOL finished) {
         _isShowingLeft = YES;
     }];
-    
 }
 
 - (void)showMainVC {    
