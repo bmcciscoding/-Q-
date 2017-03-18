@@ -41,7 +41,8 @@ self.leftVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAuto
 // 0.25;
 @property (nonatomic, assign) CGFloat animationDuration; 
 // 70 % screen width                        
-@property (nonatomic, assign) CGFloat needShowLeftWidth;                        @property (nonatomic, assign, readonly) BOOL isShowingLeft;
+@property (nonatomic, assign) CGFloat needShowLeftWidth;                        
+@property (nonatomic, assign, readonly) BOOL isShowingLeft;
 
 - (void)showLeftVC;
 - (void)showMainVC;
